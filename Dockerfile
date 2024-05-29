@@ -7,5 +7,7 @@ WORKDIR /app
 # JAR-Datei kopieren
 COPY target/demo-1.0-SNAPSHOT.jar /app/demo.jar
 
+EXPOSE 8080
+
 # Befehl zum Starten der Anwendung
 CMD ["java", "-jar", "demo.jar"]
